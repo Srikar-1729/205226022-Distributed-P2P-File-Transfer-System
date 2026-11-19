@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: tracker-service
+  main:
+    web-application-type: none   # gRPC only, no HTTP server
+    banner-mode: off
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/tracker_db?serverSelectionTimeoutMS=5000
+      auto-index-creation: true
+
+grpc:
+  server:
+    port: 9093
+    security:
+      enabled: true
+      certificate-chain: file:certs/server.crt
+      private-key: file:certs/server.key
+  client:
+    auth:
+      address: static://localhost:9091
+      negotiation-type: tls
+      security:
+        trust-cert-collection: file:certs/ca.crt
+    catalog:
+      address: static://localhost:9092
+      negotiation-type: tls
+      security:
+        trust-cert-collection: file:certs/ca.crt
+
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %-5level %logger{0} - %msg%n"
+  level:
+    org.mongodb.driver: warn

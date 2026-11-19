@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: auth-service
+  main:
+    web-application-type: none   # gRPC only, no HTTP server
+    banner-mode: off
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/auth_db?serverSelectionTimeoutMS=5000
+      auto-index-creation: true
+
+grpc:
+  server:
+    port: 9091
+    security:
+      enabled: true
+      certificate-chain: file:certs/server.crt
+      private-key: file:certs/server.key
+
+p2p:
+  keys-dir: data/keys
+
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %-5level %logger{0} - %msg%n"
+  level:
+    org.mongodb.driver: warn

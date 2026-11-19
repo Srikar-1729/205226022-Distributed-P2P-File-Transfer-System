@@ -1,0 +1,11 @@
+target/
+data/
+peers/
+certs/
+logs/
+run/
+*.class
+*.iml
+.idea/
+.vscode/
+docs/diagrams/__pycache__/

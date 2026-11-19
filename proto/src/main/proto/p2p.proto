@@ -1,0 +1,202 @@
+// gRPC contracts for the Distributed P2P File Transfer System.
+// Identity: callers send their JWT in gRPC metadata as "authorization: Bearer <jwt>".
+syntax = "proto3";
+
+package p2p.v1;
+
+option java_multiple_files = true;
+option java_package = "com.p2p.proto";
+option java_outer_classname = "P2pProto";
+
+// ---------------------------------------------------------------- common
+message Empty {}
+
+message PublicKey {
+  bytes der = 1;        // X.509 SubjectPublicKeyInfo
+  string algorithm = 2; // "RSA"
+}
+
+enum Role {
+  ROLE_UNSPECIFIED = 0;
+  USER = 1;
+  GUEST = 2;
+}
+
+enum Visibility {
+  VISIBILITY_UNSPECIFIED = 0;
+  PUBLIC = 1;      // anyone, including guests
+  REGISTERED = 2;  // any logged-in account
+  PRIVATE = 3;     // owner + allowed_users
+}
+
+// ---------------------------------------------------------------- auth
+service AuthService {
+  rpc Register(RegisterRequest) returns (AuthResponse);
+  rpc Login(LoginRequest) returns (AuthResponse);
+  rpc GuestLogin(Empty) returns (AuthResponse);
+  rpc GetPublicKey(Empty) returns (PublicKey);
+}
+
+message RegisterRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message LoginRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message AuthResponse {
+  string token = 1;
+  string user_id = 2;
+  string username = 3;
+  Role role = 4;
+  int64 expires_at = 5; // epoch millis
+}
+
+// ---------------------------------------------------------------- catalog
+service CatalogService {
+  rpc RegisterFile(RegisterFileRequest) returns (FileInfo);
+  rpc SearchFiles(SearchRequest) returns (SearchResponse);
+  rpc ListMyFiles(Empty) returns (SearchResponse);
+  rpc UpdateAccess(UpdateAccessRequest) returns (FileInfo);
+  rpc DeleteFile(FileId) returns (Empty);
+  rpc AuthorizeDownload(FileId) returns (DownloadGrant); // manifest + Download Ticket
+  rpc GetPublicKey(Empty) returns (PublicKey);           // verifies Download Tickets
+}
+
+message Manifest {
+  string file_id = 1;            // empty when registering; assigned by Catalog
+  string name = 2;
+  int64 size_bytes = 3;
+  int32 chunk_size = 4;
+  int32 chunk_count = 5;
+  repeated bytes chunk_hashes = 6; // SHA-256 of every chunk, in order
+  bytes file_hash = 7;             // SHA-256 of the whole file
+}
+
+message FileInfo {
+  string file_id = 1;
+  string name = 2;
+  int64 size_bytes = 3;
+  int32 chunk_count = 4;
+  string owner_name = 5;
+  Visibility visibility = 6;
+  repeated string allowed_users = 7;
+  int64 created_at = 8;
+  bool owned_by_me = 9;
+}
+
+message RegisterFileRequest {
+  Manifest manifest = 1;
+  Visibility visibility = 2;
+  repeated string allowed_users = 3;
+}
+
+message SearchRequest {
+  string query = 1; // case-insensitive substring of the file name; empty = everything visible
+}
+
+message SearchResponse {
+  repeated FileInfo files = 1;
+}
+
+message UpdateAccessRequest {
+  string file_id = 1;
+  Visibility visibility = 2;
+  repeated string allowed_users = 3;
+}
+
+message FileId {
+  string file_id = 1;
+}
+
+message DownloadGrant {
+  Manifest manifest = 1;
+  string ticket = 2;     // JWT signed by Catalog: {sub, fileId, exp}
+  int64 expires_at = 3;  // epoch millis
+}
+
+// ---------------------------------------------------------------- tracker
+service TrackerService {
+  rpc RegisterPeer(PeerInfo) returns (PeerSession);
+  rpc Heartbeat(PeerId) returns (HeartbeatAck);
+  rpc Announce(AnnounceRequest) returns (Empty);
+  rpc GetPeers(GetPeersRequest) returns (GetPeersResponse);
+  rpc Leave(PeerId) returns (Empty);
+}
+
+message PeerInfo {
+  string peer_id = 1;
+  string name = 2;  // human label, e.g. "peer-3"
+  string host = 3;
+  int32 port = 4;   // PeerTransferService port
+}
+
+message PeerSession {
+  int32 heartbeat_interval_seconds = 1;
+}
+
+message PeerId {
+  string peer_id = 1;
+}
+
+message HeartbeatAck {
+  bool known = 1; // false => tracker forgot us (restart/expiry): register + announce again
+}
+
+message AnnounceRequest {
+  string peer_id = 1;
+  string file_id = 2;
+  bytes bitfield = 3; // bit i set = peer has verified chunk i
+  int32 chunk_count = 4;
+  string ticket = 5;
+}
+
+message GetPeersRequest {
+  string file_id = 1;
+  string ticket = 2;
+  string peer_id = 3; // the caller; excluded from the result
+}
+
+message PeerEndpoint {
+  string peer_id = 1;
+  string name = 2;
+  string host = 3;
+  int32 port = 4;
+  bytes bitfield = 5;
+}
+
+message GetPeersResponse {
+  repeated PeerEndpoint peers = 1;
+}
+
+// ---------------------------------------------------------------- peer <-> peer
+service PeerTransferService {
+  rpc GetBitfield(BitfieldRequest) returns (Bitfield);
+  rpc DownloadChunk(ChunkRequest) returns (stream ChunkPiece); // 64 KiB pieces
+}
+
+message BitfieldRequest {
+  string file_id = 1;
+  string ticket = 2;
+}
+
+message Bitfield {
+  bytes bitfield = 1;
+  int32 chunk_count = 2;
+}
+
+message ChunkRequest {
+  string file_id = 1;
+  int32 index = 2;
+  string ticket = 3;
+}
+
+message ChunkPiece {
+  int32 index = 1;
+  int64 offset = 2; // offset of `data` inside the chunk
+  bytes data = 3;
+  bool last = 4;
+}

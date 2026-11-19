@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="ah1A73E8" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1A73E8"/></marker><marker id="ah5F6368" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5F6368"/></marker><marker id="ahBDC1C6" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#BDC1C6"/></marker></defs>
+<rect width="1600" height="900" fill="#FFFFFF"/>
+<text x="60.0" y="60.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">Login &amp; Share a File</text>
+<text x="60.0" y="92.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="400" fill="#5F6368" text-anchor="start" xml:space="preserve">How a file becomes available to the network</text>
+<path d="M 130 168 L 130 878" fill="none" stroke="#BDC1C6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+<rect x="22" y="110" width="216" height="58" rx="12" fill="#F1F3F4" stroke="#5F6368" stroke-width="2"/>
+<text x="130.0" y="133.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Browser</text>
+<text x="130.0" y="157.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">user</text>
+<path d="M 400 168 L 400 878" fill="none" stroke="#BDC1C6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+<rect x="292" y="110" width="216" height="58" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="400.0" y="133.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Peer Node</text>
+<text x="400.0" y="157.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">seeder</text>
+<path d="M 670 168 L 670 878" fill="none" stroke="#BDC1C6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+<rect x="562" y="110" width="216" height="58" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="670.0" y="144.1" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Auth Service</text>
+<path d="M 940 168 L 940 878" fill="none" stroke="#BDC1C6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+<rect x="832" y="110" width="216" height="58" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="940.0" y="144.1" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Catalog Service</text>
+<path d="M 1210 168 L 1210 878" fill="none" stroke="#BDC1C6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+<rect x="1102" y="110" width="216" height="58" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="1210.0" y="144.1" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Tracker Service</text>
+<path d="M 1470 168 L 1470 878" fill="none" stroke="#BDC1C6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+<rect x="1362" y="110" width="216" height="58" rx="12" fill="#FEF7E0" stroke="#B06000" stroke-width="2"/>
+<text x="1470.0" y="144.1" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">MongoDB</text>
+<rect x="320" y="742" width="1220" height="128" rx="6" fill="none" stroke="#5F6368" stroke-width="1.6"/>
+<path d="M320,742 h145.20000000000002 v18 l-10,10 h-135.20000000000002 z" fill="#F1F3F4" stroke="#5F6368" stroke-width="1.6"/>
+<text x="330.0" y="762.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">loop  every 10 s</text>
+<path d="M 130 202 L 400 202" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="146.6" y="175.8" width="236.8" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="265.0" y="193.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">Login  |  Continue as guest</text>
+<path d="M 400 242 L 670 242" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="396.0" y="215.8" width="278.0" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="535.0" y="233.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">Login(user, pass) | GuestLogin()</text>
+<path d="M 670 282 L 400 282" fill="none" stroke="#5F6368" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6" marker-end="url(#ah5F6368)"/>
+<rect x="429.0" y="255.8" width="212.0" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="535.0" y="273.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">JWT  (role USER | GUEST)</text>
+<path d="M 130 330 L 400 330" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="163.1" y="303.8" width="203.8" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="265.0" y="321.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">Share file + visibility</text>
+<rect x="175.24999999999997" y="356" width="449.50000000000006" height="32" rx="6" fill="#FFF8D6" stroke="#B08900" stroke-width="1.5"/>
+<text x="400.0" y="377.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="500" fill="#202124" text-anchor="middle" xml:space="preserve">split into 1 MB chunks · SHA-256 each + whole-file hash</text>
+<path d="M 400 425 L 940 425" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="465.0" y="398.8" width="410.0" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="670.0" y="416.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">RegisterFile(manifest, visibility, allowedUsers)</text>
+<rect x="803.8" y="449" width="272.40000000000003" height="32" rx="6" fill="#FFF8D6" stroke="#B08900" stroke-width="1.5"/>
+<text x="940.0" y="470.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="500" fill="#202124" text-anchor="middle" xml:space="preserve">verify JWT · guest ⇒ PUBLIC only</text>
+<path d="M 940 510 L 1470 510" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="1103.1" y="483.8" width="203.8" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="1205.0" y="501.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">insert catalog_db.files</text>
+<path d="M 940 550 L 400 550" fill="none" stroke="#5F6368" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6" marker-end="url(#ah5F6368)"/>
+<rect x="584.6" y="523.8" width="170.8" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="670.0" y="541.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">FileInfo { fileId }</text>
+<path d="M 400 598 L 1210 598" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="637.1" y="571.8" width="335.8" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="805.0" y="589.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">Announce(fileId, bitfield = all chunks)</text>
+<path d="M 1210 638 L 1470 638" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="1238.1" y="611.8" width="203.8" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="1340.0" y="629.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">upsert tracker_db.swarm</text>
+<path d="M 1210 678 L 400 678" fill="none" stroke="#5F6368" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6" marker-end="url(#ah5F6368)"/>
+<rect x="789.8" y="651.8" width="30.5" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="805.0" y="669.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">OK</text>
+<path d="M 400 718 L 130 718" fill="none" stroke="#5F6368" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6" marker-end="url(#ah5F6368)"/>
+<rect x="171.4" y="691.8" width="187.2" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="265.0" y="709.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">Shared ✓  now seeding</text>
+<path d="M 400 795 L 1210 795" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="727.9" y="768.8" width="154.2" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="805.0" y="786.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">Heartbeat(peerId)</text>
+<path d="M 1210 840 L 1470 840" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="1250.5" y="813.8" width="179.0" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="1340.0" y="831.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">peers.lastSeen = now</text>
+</svg>

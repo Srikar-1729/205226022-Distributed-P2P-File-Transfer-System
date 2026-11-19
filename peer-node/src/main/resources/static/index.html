@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>P2P Peer</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <span class="logo">⇄</span>
+    <div>
+      <div class="title" id="node-name">peer</div>
+      <div class="sub" id="node-meta"></div>
+    </div>
+  </div>
+  <div class="right">
+    <span class="pill" id="tracker-pill">tracker: …</span>
+    <span id="user-box"></span>
+  </div>
+</header>
+
+<main>
+  <!-- login -->
+  <section id="login-view" class="card narrow hidden">
+    <h2>Join the network</h2>
+    <p class="muted">Log in to share files with chosen people, or continue as a guest for public files only.</p>
+    <form id="login-form">
+      <label>Username <input name="username" autocomplete="username" required></label>
+      <label>Password <input name="password" type="password" autocomplete="current-password" required></label>
+      <div class="row">
+        <button type="submit" class="primary" data-action="login">Log in</button>
+        <button type="submit" data-action="register">Create account</button>
+      </div>
+    </form>
+    <div class="divider"><span>or</span></div>
+    <button id="guest-btn" class="wide">Continue as guest</button>
+    <p class="error" id="login-error"></p>
+  </section>
+
+  <!-- app -->
+  <section id="app-view" class="hidden">
+    <nav class="tabs">
+      <button data-tab="transfers" class="active">Transfers</button>
+      <button data-tab="search">Find files</button>
+      <button data-tab="share">Share a file</button>
+      <button data-tab="mine">My shared files</button>
+    </nav>
+
+    <div id="tab-transfers" class="tab">
+      <div id="transfers"></div>
+      <p class="muted empty" id="transfers-empty">Nothing here yet. Share a file or find one to download.</p>
+    </div>
+
+    <div id="tab-search" class="tab hidden">
+      <form id="search-form" class="row">
+        <input name="q" placeholder="Search by file name (empty = everything you can see)">
+        <button class="primary">Search</button>
+      </form>
+      <table class="list">
+        <thead><tr><th>Name</th><th>Size</th><th>Owner</th><th>Visibility</th><th></th></tr></thead>
+        <tbody id="search-results"></tbody>
+      </table>
+      <p class="error" id="search-error"></p>
+    </div>
+
+    <div id="tab-share" class="tab hidden">
+      <form id="share-form" class="card">
+        <label>File <input type="file" name="file" required></label>
+        <label>Who can download it?
+          <select name="visibility" id="visibility">
+            <option value="PUBLIC">Public: everyone, including guests</option>
+            <option value="REGISTERED">Registered: any logged-in account</option>
+            <option value="PRIVATE">Private: only the people I list</option>
+          </select>
+        </label>
+        <label id="allowed-label" class="hidden">Usernames (comma separated)
+          <input name="allowedUsers" placeholder="bob, carol">
+        </label>
+        <p class="muted" id="guest-note">Guests can share public files only. Log in to restrict access.</p>
+        <button class="primary" id="share-btn">Share</button>
+        <p class="muted" id="share-status"></p>
+        <p class="error" id="share-error"></p>
+      </form>
+    </div>
+
+    <div id="tab-mine" class="tab hidden">
+      <table class="list">
+        <thead><tr><th>Name</th><th>Size</th><th>Visibility</th><th>Shared with</th><th></th></tr></thead>
+        <tbody id="mine-results"></tbody>
+      </table>
+      <p class="error" id="mine-error"></p>
+    </div>
+  </section>
+</main>
+
+<script src="/app.js"></script>
+</body>
+</html>

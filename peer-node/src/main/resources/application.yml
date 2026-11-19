@@ -1,0 +1,54 @@
+# Ports and peer.name / peer.data-dir default from --peer.index=N (see PeerApplication):
+#   web UI 8080+N, gRPC 50050+N, data peers/peer-N
+spring:
+  application:
+    name: peer-node
+  main:
+    banner-mode: off
+  mvc:
+    async:
+      request-timeout: -1      # Server-Sent Events stay open
+  task:
+    scheduling:
+      pool:
+        size: 3
+
+server:
+  address: 127.0.0.1           # the UI is for this machine only
+  tomcat:
+    threads:
+      max: 30
+
+grpc:
+  server:
+    security:
+      enabled: true
+      certificate-chain: file:certs/server.crt
+      private-key: file:certs/server.key
+  client:
+    auth:
+      address: static://localhost:9091
+      negotiation-type: tls
+      security:
+        trust-cert-collection: file:certs/ca.crt
+    catalog:
+      address: static://localhost:9092
+      negotiation-type: tls
+      security:
+        trust-cert-collection: file:certs/ca.crt
+    tracker:
+      address: static://localhost:9093
+      negotiation-type: tls
+      security:
+        trust-cert-collection: file:certs/ca.crt
+
+peer:
+  host: localhost
+  max-peers: 4
+  per-peer: 2
+  upload-limit: 0
+  ca-cert: certs/ca.crt
+
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %-5level %logger{0} - %msg%n"

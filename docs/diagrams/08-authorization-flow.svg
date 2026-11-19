@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="ah188038" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#188038"/></marker><marker id="ah1A73E8" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1A73E8"/></marker><marker id="ah202124" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#202124"/></marker><marker id="ahC5221F" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C5221F"/></marker></defs>
+<rect width="1600" height="900" fill="#FFFFFF"/>
+<text x="60.0" y="60.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">Authorizing a Download</text>
+<text x="60.0" y="92.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="400" fill="#5F6368" text-anchor="start" xml:space="preserve">Catalog decides once; the signed ticket is then checked by the Tracker and every peer</text>
+<rect x="230" y="118" width="400" height="56" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="430.0" y="140.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">AuthorizeDownload(fileId)</text>
+<text x="430.0" y="164.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">caller&#x27;s JWT in gRPC metadata</text>
+<path d="M 430 174 L 430 196.0" fill="none" stroke="#202124" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah202124)"/>
+<polygon points="430,199.0 580.0,240 430,281.0 280.0,240" fill="#FFF8D6" stroke="#B08900" stroke-width="2"/>
+<text x="430.0" y="245.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600" fill="#202124" text-anchor="middle" xml:space="preserve">JWT valid?</text>
+<path d="M 580.0 240 L 676 240" fill="none" stroke="#C5221F" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ahC5221F)"/>
+<rect x="607.9" y="215.7" width="28.3" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="622.0" y="231.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#C5221F" text-anchor="middle" xml:space="preserve">no</text>
+<rect x="680" y="216" width="300" height="48" rx="12" fill="#FCE8E6" stroke="#C5221F" stroke-width="2"/>
+<text x="830.0" y="244.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#C5221F" text-anchor="middle" xml:space="preserve">✗ UNAUTHENTICATED</text>
+<path d="M 430 281.0 L 430 306.0" fill="none" stroke="#202124" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah202124)"/>
+<rect x="433.0" y="283.1" width="35.5" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="440.0" y="298.5" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">yes</text>
+<polygon points="430,309.0 580.0,350 430,391.0 280.0,350" fill="#FFF8D6" stroke="#B08900" stroke-width="2"/>
+<text x="430.0" y="345.1" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600" fill="#202124" text-anchor="middle" xml:space="preserve">visibility</text>
+<text x="430.0" y="365.4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600" fill="#202124" text-anchor="middle" xml:space="preserve">= PUBLIC?</text>
+<path d="M 580.0 350 L 676 350" fill="none" stroke="#188038" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)"/>
+<rect x="604.3" y="325.6" width="35.5" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="622.0" y="341.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#188038" text-anchor="middle" xml:space="preserve">yes</text>
+<rect x="680" y="326" width="300" height="48" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="830.0" y="354.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#188038" text-anchor="middle" xml:space="preserve">✓ issue Download Ticket</text>
+<path d="M 430 391.0 L 430 416.0" fill="none" stroke="#202124" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah202124)"/>
+<rect x="433.0" y="393.1" width="28.3" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="440.0" y="408.5" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">no</text>
+<polygon points="430,419.0 580.0,460 430,501.0 280.0,460" fill="#FFF8D6" stroke="#B08900" stroke-width="2"/>
+<text x="430.0" y="455.1" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600" fill="#202124" text-anchor="middle" xml:space="preserve">caller is</text>
+<text x="430.0" y="475.4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600" fill="#202124" text-anchor="middle" xml:space="preserve">a guest?</text>
+<path d="M 580.0 460 L 676 460" fill="none" stroke="#C5221F" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ahC5221F)"/>
+<rect x="604.3" y="435.6" width="35.5" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="622.0" y="451.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#C5221F" text-anchor="middle" xml:space="preserve">yes</text>
+<rect x="680" y="436" width="300" height="48" rx="12" fill="#FCE8E6" stroke="#C5221F" stroke-width="2"/>
+<text x="830.0" y="464.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#C5221F" text-anchor="middle" xml:space="preserve">✗ PERMISSION_DENIED</text>
+<path d="M 430 501.0 L 430 526.0" fill="none" stroke="#202124" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah202124)"/>
+<rect x="433.0" y="503.1" width="28.3" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="440.0" y="518.5" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">no</text>
+<polygon points="430,529.0 580.0,570 430,611.0 280.0,570" fill="#FFF8D6" stroke="#B08900" stroke-width="2"/>
+<text x="430.0" y="565.1" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600" fill="#202124" text-anchor="middle" xml:space="preserve">visibility</text>
+<text x="430.0" y="585.4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600" fill="#202124" text-anchor="middle" xml:space="preserve">= REGISTERED?</text>
+<path d="M 580.0 570 L 676 570" fill="none" stroke="#188038" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)"/>
+<rect x="604.3" y="545.6" width="35.5" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="622.0" y="561.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#188038" text-anchor="middle" xml:space="preserve">yes</text>
+<rect x="680" y="546" width="300" height="48" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="830.0" y="574.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#188038" text-anchor="middle" xml:space="preserve">✓ issue Download Ticket</text>
+<path d="M 430 611.0 L 430 636.0" fill="none" stroke="#202124" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah202124)"/>
+<rect x="433.0" y="613.1" width="99.8" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="440.0" y="628.5" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">no (PRIVATE)</text>
+<polygon points="430,639.0 580.0,680 430,721.0 280.0,680" fill="#FFF8D6" stroke="#B08900" stroke-width="2"/>
+<text x="430.0" y="675.1" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600" fill="#202124" text-anchor="middle" xml:space="preserve">owner or in</text>
+<text x="430.0" y="695.4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="600" fill="#202124" text-anchor="middle" xml:space="preserve">allowedUsers?</text>
+<path d="M 580.0 680 L 676 680" fill="none" stroke="#188038" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)"/>
+<rect x="604.3" y="655.6" width="35.5" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="622.0" y="671.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#188038" text-anchor="middle" xml:space="preserve">yes</text>
+<rect x="680" y="656" width="300" height="48" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="830.0" y="684.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#188038" text-anchor="middle" xml:space="preserve">✓ issue Download Ticket</text>
+<path d="M 430 721.0 L 430 772" fill="none" stroke="#202124" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah202124)"/>
+<rect x="433.0" y="736.1" width="28.3" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="440.0" y="751.5" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">no</text>
+<rect x="280" y="776" width="300" height="48" rx="12" fill="#FCE8E6" stroke="#C5221F" stroke-width="2"/>
+<text x="430.0" y="804.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#C5221F" text-anchor="middle" xml:space="preserve">✗ PERMISSION_DENIED</text>
+<rect x="1060" y="118" width="480" height="260" rx="12" fill="#F7FCF8" stroke="#188038" stroke-width="2"/>
+<text x="1084.0" y="154.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="700" fill="#188038" text-anchor="start" xml:space="preserve">Download Ticket = signed JWT</text>
+<text x="1090.0" y="192.0" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace" font-size="15" font-weight="400" fill="#202124" text-anchor="start" xml:space="preserve">{</text>
+<text x="1090.0" y="219.0" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace" font-size="15" font-weight="400" fill="#202124" text-anchor="start" xml:space="preserve">  &quot;iss&quot;: &quot;catalog-service&quot;,</text>
+<text x="1090.0" y="246.0" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace" font-size="15" font-weight="400" fill="#202124" text-anchor="start" xml:space="preserve">  &quot;sub&quot;: &quot;alice&quot;,</text>
+<text x="1090.0" y="273.0" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace" font-size="15" font-weight="400" fill="#202124" text-anchor="start" xml:space="preserve">  &quot;fileId&quot;: &quot;7f3c…&quot;,</text>
+<text x="1090.0" y="300.0" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace" font-size="15" font-weight="400" fill="#202124" text-anchor="start" xml:space="preserve">  &quot;exp&quot;: now + 30 min</text>
+<text x="1090.0" y="327.0" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace" font-size="15" font-weight="400" fill="#202124" text-anchor="start" xml:space="preserve">}</text>
+<text x="1084.0" y="362.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="start" xml:space="preserve">Signed with Catalog&#x27;s private key (RS256)</text>
+<text x="1060.0" y="430.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">Checked at three points</text>
+<rect x="1060" y="452" width="480" height="84" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="1082.0" y="486.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">1  Catalog Service</text>
+<text x="1082.0" y="512.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="start" xml:space="preserve">issues it only after the checks on the left</text>
+<path d="M 1300 538 L 1300 560" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="1060" y="564" width="480" height="84" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="1082.0" y="598.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">2  Tracker · GetPeers</text>
+<text x="1082.0" y="624.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="start" xml:space="preserve">no ticket → swarm of the file stays hidden</text>
+<path d="M 1300 650 L 1300 672" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="1060" y="676" width="480" height="84" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="1082.0" y="710.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">3  Every peer · DownloadChunk</text>
+<text x="1082.0" y="736.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="start" xml:space="preserve">no ticket → chunk is not served</text>
+<text x="1060.0" y="815.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="600" fill="#5F6368" text-anchor="start" xml:space="preserve">Knowing a peer&#x27;s address is not enough to fetch a private file.</text>
+</svg>

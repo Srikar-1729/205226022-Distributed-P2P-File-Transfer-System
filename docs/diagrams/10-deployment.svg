@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="ah188038" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#188038"/></marker><marker id="ah1A73E8" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1A73E8"/></marker><marker id="ahB06000" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#B06000"/></marker></defs>
+<rect width="1600" height="900" fill="#FFFFFF"/>
+<text x="60.0" y="60.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">Deployment on One Machine</text>
+<text x="60.0" y="92.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="400" fill="#5F6368" text-anchor="start" xml:space="preserve">Spring Boot jars (java -jar) on localhost; only MongoDB runs in a Docker container</text>
+<rect x="50" y="112" width="1500" height="770" rx="12" fill="#FBFBFC" stroke="#BDC1C6" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="76.0" y="146.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#5F6368" text-anchor="start" xml:space="preserve">localhost  ·  Linux / Windows / macOS  ·  Java 21</text>
+<path d="M100,186 A120.0,16 0 0 0 340,186 L340,304 A120.0,16 0 0 1 100,304 Z" fill="#FEF7E0" stroke="#B06000" stroke-width="2"/>
+<ellipse cx="220.0" cy="186" rx="120.0" ry="16" fill="#FEF7E0" stroke="#B06000" stroke-width="2"/>
+<text x="220.0" y="239.7" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">MongoDB</text>
+<text x="220.0" y="263.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">:27017</text>
+<text x="220.0" y="284.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">Docker: p2p-mongo (mongo:7)</text>
+<rect x="420" y="180" width="280" height="110" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="560.0" y="218.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">auth-service</text>
+<text x="560.0" y="244.4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">gRPC :9091</text>
+<text x="560.0" y="264.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">Spring Boot · auth-service.jar</text>
+<rect x="740" y="180" width="280" height="110" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="880.0" y="218.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">catalog-service</text>
+<text x="880.0" y="244.4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">gRPC :9092</text>
+<text x="880.0" y="264.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">Spring Boot · catalog-service.jar</text>
+<rect x="1060" y="180" width="280" height="110" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="1200.0" y="218.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">tracker-service</text>
+<text x="1200.0" y="244.4" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">gRPC :9093</text>
+<text x="1200.0" y="264.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">Spring Boot · tracker-service.jar</text>
+<path d="M 560 290 L 560 334" fill="none" stroke="#B06000" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 880 290 L 880 334" fill="none" stroke="#B06000" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1200 290 L 1200 334" fill="none" stroke="#B06000" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 1200 334 L 220 334 L 220 324" fill="none" stroke="#B06000" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ahB06000)"/>
+<rect x="643.0" y="322.6" width="114.1" height="22.2" rx="5" fill="#FBFBFC"/>
+<text x="700.0" y="338.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#B06000" text-anchor="middle" xml:space="preserve">MongoDB driver</text>
+<text x="76.0" y="400.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#188038" text-anchor="start" xml:space="preserve">Peer nodes: same JAR, started 10× with different --peer.id, ports and data folder</text>
+<rect x="90" y="425" width="260" height="150" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="220.0" y="474.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Peer 1</text>
+<text x="220.0" y="499.6" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">web UI  :8081</text>
+<text x="220.0" y="519.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">gRPC  :50051</text>
+<text x="220.0" y="538.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">peers/peer-1/</text>
+<path d="M 354 500 L 376 500" fill="none" stroke="#188038" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)" marker-start="url(#ah188038)"/>
+<rect x="380" y="425" width="260" height="150" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="510.0" y="474.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Peer 2</text>
+<text x="510.0" y="499.6" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">web UI  :8082</text>
+<text x="510.0" y="519.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">gRPC  :50052</text>
+<text x="510.0" y="538.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">peers/peer-2/</text>
+<path d="M 644 500 L 666 500" fill="none" stroke="#188038" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)" marker-start="url(#ah188038)"/>
+<rect x="670" y="425" width="260" height="150" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="800.0" y="474.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Peer 3</text>
+<text x="800.0" y="499.6" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">web UI  :8083</text>
+<text x="800.0" y="519.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">gRPC  :50053</text>
+<text x="800.0" y="538.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">peers/peer-3/</text>
+<path d="M 934 500 L 956 500" fill="none" stroke="#188038" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)" marker-start="url(#ah188038)"/>
+<rect x="960" y="425" width="260" height="150" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="1090.0" y="474.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Peer 4</text>
+<text x="1090.0" y="499.6" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">web UI  :8084</text>
+<text x="1090.0" y="519.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">gRPC  :50054</text>
+<text x="1090.0" y="538.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">peers/peer-4/</text>
+<path d="M 1224 500 L 1246 500" fill="none" stroke="#188038" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)" marker-start="url(#ah188038)"/>
+<rect x="1250" y="425" width="260" height="150" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="1380.0" y="474.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Peer 5</text>
+<text x="1380.0" y="499.6" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">web UI  :8085</text>
+<text x="1380.0" y="519.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">gRPC  :50055</text>
+<text x="1380.0" y="538.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">peers/peer-5/</text>
+<path d="M 220 579 L 220 621" fill="none" stroke="#188038" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)" marker-start="url(#ah188038)"/>
+<path d="M 510 579 L 510 621" fill="none" stroke="#188038" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)" marker-start="url(#ah188038)"/>
+<path d="M 800 579 L 800 621" fill="none" stroke="#188038" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)" marker-start="url(#ah188038)"/>
+<path d="M 1090 579 L 1090 621" fill="none" stroke="#188038" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)" marker-start="url(#ah188038)"/>
+<path d="M 1380 579 L 1380 621" fill="none" stroke="#188038" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)" marker-start="url(#ah188038)"/>
+<rect x="90" y="625" width="260" height="150" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="220.0" y="674.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Peer 6</text>
+<text x="220.0" y="699.6" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">web UI  :8086</text>
+<text x="220.0" y="719.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">gRPC  :50056</text>
+<text x="220.0" y="738.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">peers/peer-6/</text>
+<path d="M 354 700 L 376 700" fill="none" stroke="#188038" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)" marker-start="url(#ah188038)"/>
+<rect x="380" y="625" width="260" height="150" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="510.0" y="674.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Peer 7</text>
+<text x="510.0" y="699.6" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">web UI  :8087</text>
+<text x="510.0" y="719.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">gRPC  :50057</text>
+<text x="510.0" y="738.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">peers/peer-7/</text>
+<path d="M 644 700 L 666 700" fill="none" stroke="#188038" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)" marker-start="url(#ah188038)"/>
+<rect x="670" y="625" width="260" height="150" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="800.0" y="674.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Peer 8</text>
+<text x="800.0" y="699.6" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">web UI  :8088</text>
+<text x="800.0" y="719.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">gRPC  :50058</text>
+<text x="800.0" y="738.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">peers/peer-8/</text>
+<path d="M 934 700 L 956 700" fill="none" stroke="#188038" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)" marker-start="url(#ah188038)"/>
+<rect x="960" y="625" width="260" height="150" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="1090.0" y="674.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Peer 9</text>
+<text x="1090.0" y="699.6" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">web UI  :8089</text>
+<text x="1090.0" y="719.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">gRPC  :50059</text>
+<text x="1090.0" y="738.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">peers/peer-9/</text>
+<path d="M 1224 700 L 1246 700" fill="none" stroke="#188038" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)" marker-start="url(#ah188038)"/>
+<rect x="1250" y="625" width="260" height="150" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="1380.0" y="674.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Peer 10</text>
+<text x="1380.0" y="699.6" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">web UI  :8090</text>
+<text x="1380.0" y="719.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">gRPC  :50060</text>
+<text x="1380.0" y="738.8" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">peers/peer-10/</text>
+<path d="M 1520 425 L 1520 235 L 1344 235" fill="none" stroke="#1A73E8" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)" marker-start="url(#ah1A73E8)"/>
+<rect x="1498.7" y="364.6" width="42.6" height="22.2" rx="5" fill="#FBFBFC"/>
+<text x="1520.0" y="380.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="700" fill="#1A73E8" text-anchor="middle" xml:space="preserve">gRPC</text>
+<rect x="76" y="805" width="1450" height="58" rx="10" fill="#FFFDF2" stroke="#B08900" stroke-width="2"/>
+<text x="100.0" y="841.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="600" fill="#202124" text-anchor="start" xml:space="preserve">Start order:   ① scripts/start-mongo.sh   →   ② scripts/start-services.sh   →   ③ scripts/start-peers.sh 10   →   open http://localhost:8081 … :8090</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="ah188038" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#188038"/></marker><marker id="ah202124" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#202124"/></marker><marker id="ah9334E6" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9334E6"/></marker><marker id="ahC5221F" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C5221F"/></marker><marker id="ahE8710A" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#E8710A"/></marker></defs>
+<rect width="1600" height="900" fill="#FFFFFF"/>
+<text x="60.0" y="60.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">Download Lifecycle &amp; Resume</text>
+<text x="60.0" y="92.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="400" fill="#5F6368" text-anchor="start" xml:space="preserve">State machine of one download inside a peer node</text>
+<rect x="80" y="190" width="200" height="70" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="180.0" y="218.7" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">QUEUED</text>
+<text x="180.0" y="242.9" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">waiting to start</text>
+<rect x="360" y="190" width="200" height="70" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="460.0" y="218.7" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">AUTHORIZING</text>
+<text x="460.0" y="242.9" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">get manifest + ticket</text>
+<rect x="640" y="190" width="200" height="70" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="740.0" y="218.7" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">FINDING PEERS</text>
+<text x="740.0" y="242.9" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">Tracker.GetPeers</text>
+<rect x="920" y="190" width="200" height="70" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="1020.0" y="218.7" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">DOWNLOADING</text>
+<text x="1020.0" y="242.9" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">chunks in parallel</text>
+<rect x="1240" y="190" width="200" height="70" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="1340.0" y="218.7" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">VERIFYING FILE</text>
+<text x="1340.0" y="242.9" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">whole-file SHA-256</text>
+<rect x="1240" y="420" width="200" height="70" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="1340.0" y="448.7" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">COMPLETED</text>
+<text x="1340.0" y="472.9" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">now seeding</text>
+<rect x="920" y="420" width="200" height="70" rx="12" fill="#F1F3F4" stroke="#5F6368" stroke-width="2"/>
+<text x="1020.0" y="448.7" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">PAUSED</text>
+<text x="1020.0" y="472.9" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">user paused</text>
+<rect x="640" y="420" width="200" height="70" rx="12" fill="#FEEFE3" stroke="#E8710A" stroke-width="2"/>
+<text x="740.0" y="448.7" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">STALLED</text>
+<text x="740.0" y="472.9" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">no peers online</text>
+<rect x="360" y="420" width="200" height="70" rx="12" fill="#F3E8FD" stroke="#9334E6" stroke-width="2"/>
+<text x="460.0" y="448.7" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">RESUMING</text>
+<text x="460.0" y="472.9" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">load .state.json</text>
+<circle cx="40" cy="225" r="11" fill="#202124"/>
+<path d="M 52 225 L 76 225" fill="none" stroke="#202124" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah202124)"/>
+<path d="M 282 225 L 356 225" fill="none" stroke="#202124" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah202124)"/>
+<rect x="295.1" y="196.7" width="49.8" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="320.0" y="212.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#202124" text-anchor="middle" xml:space="preserve">start</text>
+<path d="M 562 225 L 636 225" fill="none" stroke="#202124" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah202124)"/>
+<rect x="564.4" y="196.7" width="71.2" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="600.0" y="212.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#202124" text-anchor="middle" xml:space="preserve">ticket ✓</text>
+<path d="M 842 225 L 916 225" fill="none" stroke="#202124" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah202124)"/>
+<rect x="848.0" y="196.7" width="64.1" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="880.0" y="212.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#202124" text-anchor="middle" xml:space="preserve">peers ✓</text>
+<path d="M 1122 225 L 1236 225" fill="none" stroke="#202124" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah202124)"/>
+<rect x="1130.1" y="196.7" width="99.8" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="1180.0" y="212.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#202124" text-anchor="middle" xml:space="preserve">all chunks ✓</text>
+<path d="M 1340 262 L 1340 416" fill="none" stroke="#188038" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)"/>
+<rect x="1343.0" y="324.6" width="56.9" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="1350.0" y="340.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#188038" text-anchor="start" xml:space="preserve">hash ✓</text>
+<path d="M 1290 188 C 1262 122, 1098 122, 1070 186" fill="none" stroke="#C5221F" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ahC5221F)"/>
+<rect x="1072.9" y="114.7" width="214.2" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="1180.0" y="130.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#C5221F" text-anchor="middle" xml:space="preserve">hash ✗ → re-fetch bad chunks</text>
+<path d="M 990 262 L 990 416" fill="none" stroke="#202124" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah202124)"/>
+<rect x="939.2" y="324.6" width="49.8" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="982.0" y="340.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#202124" text-anchor="end" xml:space="preserve">pause</text>
+<path d="M 1050 418 L 1050 264" fill="none" stroke="#202124" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah202124)"/>
+<rect x="1051.0" y="324.6" width="56.9" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="1058.0" y="340.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#202124" text-anchor="start" xml:space="preserve">resume</text>
+<path d="M 950 262 L 812 416" fill="none" stroke="#E8710A" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ahE8710A)"/>
+<rect x="789.5" y="302.6" width="85.5" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="868.0" y="318.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#E8710A" text-anchor="end" xml:space="preserve">peers gone</text>
+<path d="M 690 418 L 690 264" fill="none" stroke="#E8710A" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ahE8710A)"/>
+<rect x="603.5" y="324.6" width="85.5" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="682.0" y="340.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#E8710A" text-anchor="end" xml:space="preserve">retry 15 s</text>
+<path d="M 460 418 L 460 264" fill="none" stroke="#9334E6" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah9334E6)"/>
+<rect x="463.0" y="324.6" width="99.8" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="470.0" y="340.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#9334E6" text-anchor="start" xml:space="preserve">state loaded</text>
+<circle cx="150" cy="455" r="11" fill="none" stroke="#202124" stroke-width="2.5"/><circle cx="150" cy="455" r="6" fill="#202124"/>
+<path d="M 163 455 L 356 455" fill="none" stroke="#202124" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah202124)"/>
+<rect x="208.1" y="426.6" width="99.8" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="258.0" y="442.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#202124" text-anchor="middle" xml:space="preserve">node restart</text>
+<rect x="172.3" y="464.6" width="171.3" height="22.2" rx="5" fill="#FFFFFF"/>
+<text x="258.0" y="480.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="600" fill="#5F6368" text-anchor="middle" xml:space="preserve">(crash / app reopened)</text>
+<rect x="1240" y="600" width="200" height="70" rx="12" fill="#FCE8E6" stroke="#C5221F" stroke-width="2"/>
+<text x="1340.0" y="628.7" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">FAILED</text>
+<text x="1340.0" y="652.9" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">needs user action</text>
+<text x="1340.0" y="700.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">from any state: access revoked,</text>
+<text x="1340.0" y="719.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">file deleted, disk full</text>
+<rect x="80" y="578" width="1060" height="280" rx="12" fill="#FFFDF2" stroke="#B08900" stroke-width="2"/>
+<text x="104.0" y="614.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">Saved on disk for each download</text>
+<text x="104.0" y="652.0" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace" font-size="16" font-weight="600" fill="#202124" text-anchor="start" xml:space="preserve">peers/peer-4/downloads/</text>
+<text x="130.0" y="682.0" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace" font-size="16" font-weight="400" fill="#202124" text-anchor="start" xml:space="preserve">lecture.mp4.part</text>
+<text x="420.0" y="682.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#5F6368" text-anchor="start" xml:space="preserve">pre-allocated; chunk i written at i × 1 MB</text>
+<text x="130.0" y="710.0" font-family="Consolas, Menlo, DejaVu Sans Mono, monospace" font-size="16" font-weight="400" fill="#202124" text-anchor="start" xml:space="preserve">&lt;fileId&gt;.state.json</text>
+<text x="420.0" y="710.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#5F6368" text-anchor="start" xml:space="preserve">{ manifest, bitfield, status, updatedAt }</text>
+<text x="104.0" y="754.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">•</text>
+<text x="122.0" y="754.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="start" xml:space="preserve">state.json rewritten atomically (write temp file → rename) after every verified chunk</text>
+<text x="104.0" y="784.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">•</text>
+<text x="122.0" y="784.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="start" xml:space="preserve">On restart: re-hash chunks marked done (catches half-written data) → get a new ticket</text>
+<text x="104.0" y="814.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">•</text>
+<text x="122.0" y="814.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="start" xml:space="preserve">Only the missing chunks are downloaded again; nothing restarts from zero</text>
+</svg>

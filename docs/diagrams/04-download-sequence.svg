@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="ah188038" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#188038"/></marker><marker id="ah1A73E8" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1A73E8"/></marker><marker id="ah5F6368" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5F6368"/></marker><marker id="ahBDC1C6" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#BDC1C6"/></marker></defs>
+<rect width="1600" height="900" fill="#FFFFFF"/>
+<text x="60.0" y="60.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">Parallel Download</text>
+<text x="60.0" y="92.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="400" fill="#5F6368" text-anchor="start" xml:space="preserve">Authorize once, then pull chunks from several peers at the same time</text>
+<path d="M 120 168 L 120 878" fill="none" stroke="#BDC1C6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+<rect x="12" y="110" width="216" height="58" rx="12" fill="#F1F3F4" stroke="#5F6368" stroke-width="2"/>
+<text x="120.0" y="133.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Browser</text>
+<text x="120.0" y="157.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">user</text>
+<path d="M 380 168 L 380 878" fill="none" stroke="#BDC1C6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+<rect x="272" y="110" width="216" height="58" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="380.0" y="133.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Peer Node</text>
+<text x="380.0" y="157.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">downloader</text>
+<path d="M 640 168 L 640 878" fill="none" stroke="#BDC1C6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+<rect x="532" y="110" width="216" height="58" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="640.0" y="144.1" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Catalog Service</text>
+<path d="M 900 168 L 900 878" fill="none" stroke="#BDC1C6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+<rect x="792" y="110" width="216" height="58" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+<text x="900.0" y="144.1" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Tracker Service</text>
+<path d="M 1160 168 L 1160 878" fill="none" stroke="#BDC1C6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+<rect x="1052" y="110" width="216" height="58" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="1160.0" y="133.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Peer A</text>
+<text x="1160.0" y="157.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">seeder</text>
+<path d="M 1440 168 L 1440 878" fill="none" stroke="#BDC1C6" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+<rect x="1332" y="110" width="216" height="58" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="2"/>
+<text x="1440.0" y="133.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="700" fill="#202124" text-anchor="middle" xml:space="preserve">Peer B</text>
+<text x="1440.0" y="157.2" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="13" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">seeder</text>
+<rect x="300" y="508" width="1250" height="190" rx="6" fill="none" stroke="#5F6368" stroke-width="1.6"/>
+<path d="M300,508 h645.7 v18 l-10,10 h-635.7 z" fill="#F1F3F4" stroke="#5F6368" stroke-width="1.6"/>
+<text x="310.0" y="528.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" fill="#202124" text-anchor="start" xml:space="preserve">par  rarest-first · ≤ 4 peers · ≤ 2 in-flight each · every peer checks the ticket</text>
+<path d="M 120 200 L 380 200" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="160.5" y="173.8" width="179.0" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="250.0" y="191.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">Search &quot;lecture.mp4&quot;</text>
+<path d="M 380 240 L 640 240" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="428.8" y="213.8" width="162.5" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="510.0" y="231.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">SearchFiles(query)</text>
+<path d="M 640 280 L 380 280" fill="none" stroke="#5F6368" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6" marker-end="url(#ah5F6368)"/>
+<rect x="412.2" y="253.8" width="195.5" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="510.0" y="271.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">only files you may see</text>
+<path d="M 120 325 L 380 325" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="210.0" y="298.8" width="80.0" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="250.0" y="316.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">Download</text>
+<path d="M 380 365 L 640 365" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="399.9" y="338.8" width="220.3" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="510.0" y="356.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">AuthorizeDownload(fileId)</text>
+<path d="M 640 405 L 380 405" fill="none" stroke="#5F6368" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6" marker-end="url(#ah5F6368)"/>
+<rect x="404.0" y="378.8" width="212.0" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="510.0" y="396.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">manifest + signed ticket</text>
+<path d="M 380 448 L 900 448" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="534.0" y="421.8" width="212.0" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="640.0" y="439.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">GetPeers(fileId, ticket)</text>
+<path d="M 900 488 L 380 488" fill="none" stroke="#5F6368" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6" marker-end="url(#ah5F6368)"/>
+<rect x="505.1" y="461.8" width="269.8" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="640.0" y="479.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">A: chunks 0–299 · B: all chunks</text>
+<path d="M 380 562 L 1160 562" fill="none" stroke="#188038" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)"/>
+<rect x="626.9" y="535.8" width="286.2" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="770.0" y="553.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">DownloadChunk(fileId, #7, ticket)</text>
+<path d="M 380 602 L 1440 602" fill="none" stroke="#188038" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah188038)"/>
+<rect x="766.9" y="575.8" width="286.2" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="910.0" y="593.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">DownloadChunk(fileId, #8, ticket)</text>
+<path d="M 1160 642 L 380 642" fill="none" stroke="#5F6368" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6" marker-end="url(#ah5F6368)"/>
+<rect x="664.0" y="615.8" width="212.0" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="770.0" y="633.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">stream 16 × 64 KB pieces</text>
+<path d="M 1440 682 L 380 682" fill="none" stroke="#5F6368" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6" marker-end="url(#ah5F6368)"/>
+<rect x="804.0" y="655.8" width="212.0" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="910.0" y="673.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">stream 16 × 64 KB pieces</text>
+<rect x="201.45" y="709" width="357.1" height="32" rx="6" fill="#FFF8D6" stroke="#B08900" stroke-width="1.5"/>
+<text x="380.0" y="730.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="500" fill="#202124" text-anchor="middle" xml:space="preserve">SHA-256 ✓ → write at offset → save bitfield</text>
+<path d="M 380 768 L 900 768" fill="none" stroke="#1A73E8" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#ah1A73E8)"/>
+<rect x="418.5" y="741.8" width="443.0" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="640.0" y="759.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#202124" text-anchor="middle" xml:space="preserve">Announce(fileId, new chunks)  → I can serve them too</text>
+<path d="M 380 808 L 120 808" fill="none" stroke="#5F6368" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6" marker-end="url(#ah5F6368)"/>
+<rect x="185.2" y="781.8" width="129.5" height="24.8" rx="5" fill="#FFFFFF"/>
+<text x="250.0" y="799.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" fill="#5F6368" text-anchor="middle" xml:space="preserve">progress (SSE)</text>
+<rect x="197.6" y="834" width="364.8" height="32" rx="6" fill="#FFF8D6" stroke="#B08900" stroke-width="1.5"/>
+<text x="380.0" y="855.0" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="500" fill="#202124" text-anchor="middle" xml:space="preserve">all chunks ✓ → whole-file hash ✓ → COMPLETED</text>
+</svg>
